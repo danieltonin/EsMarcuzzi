@@ -1,9 +1,30 @@
 function calcoloMin(){
 	
-	let mese = document.getElementById("mese").value;
+	let data = document.getElementById("data").value;
 	
-	let anno= document.getElementById("anno").value;
+	let meseStr = data.getMonth;
 	
+	let annoStr = data.getYear;
+	
+	switch (meseStr) {
+	
+		case "Gennaio":
+			mese = 1;
+		break;
+		
+		case "Febbraio":
+			mese = 2;
+		break;
+		
+		case "Marzo":
+			mese = 3;
+		break;
+	
+	}
+	
+	mese = meseStr.parseInt;
+	
+
 	
 	let mesi = [12];
 	
@@ -33,9 +54,9 @@ function calcoloMin(){
 	
 	let minMesi = mesi[mese]*24*60;
 	
-	let minAnno  = anno*365*24*60;
+	let minAnno  = (2024 - anno)*365*24*60;
 	
-	let res = minAnno + minMesi;
+	let minA = minAnno + minMesi;
 	
 	
 	
