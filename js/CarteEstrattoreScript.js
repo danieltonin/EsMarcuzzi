@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let ctx = canvas.getContext('2d');
   let spriteSheet = new Image();
   
-  spriteSheet.src = 'C:\\Users\\tonin\\Documents\\Siti\\EsMarcuzzi\\img\\carte_napoletane.png'; // Percorso del tuo Sprite Sheet
+  spriteSheet.src = 'D:\\Users\\daniel.tonin\\Documents\\EsMarcuzzi-main\\img\\carte_napoletane.png'; // Percorso del tuo Sprite Sheet
 
   spriteSheet.onload = function() {
     let cardWidth = 64;  // Larghezza di ogni carta
