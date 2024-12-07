@@ -1,60 +1,25 @@
+const carlinoSrc = ".\img\carlino.jpg";
 
-let descrizione[] = {"basenji (Congo, 43 cm)", "carlino (Cina, 30 cm)", "san bernardo (Svizzera, 80 cm)", "terranova (Canada, 75 cm)"}
+const basenjiSrc = ".\img\basenji.jpg";
 
-const carlinoSrc = "D:\Users\daniel.tonin\Documents\EsMarcuzzi-main\img\carlino";
+const sanbernardoSrc = ".\img\san bernardo.jpg";
 
-const basenjiSrc = "D:\Users\daniel.tonin\Documents\EsMarcuzzi-main\img\carlino";
+const terranovaSrc = ".\img\terranova.jpg";
 
-const sanBernandoSrc = "D:\Users\daniel.tonin\Documents\EsMarcuzzi-main\img\carlino";
-
-const terranovaSrc = "D:\Users\daniel.tonin\Documents\EsMarcuzzi-main\img\carlino";
-
-
-let img[] = {carlinoSrc, basenjiSrc, sanBernandoSrc, terranovaSrc}
+const vettImg = [carlinoSrc, basenjiSrc, sanbernardoSrc, terranovaSrc];
 
 
+const vettDescrizione = ["basenji (Congo, 43 cm)", "carlino (Cina, 30 cm)", "san bernardo (Svizzera, 80 cm)", "terranova (Canada, 75 cm)"];
 
 
-
-
-function scegli() {
+function mostra(){
 	
-	alert("cane");
+	const cane = document.createElement("div");
 	
-	let cane = document.getElementById("cane").innerText;
+	const img = document.createElement("img");
 	
-	switch(cane) {
-		case "carlino":
-		
-		document.getElementById("descrizione").innerText = descrizione[1];
-		
-		document.getElementById("immagine").src = img[0];
-		
-    break;
-		case "basenji":
-		
-		document.getElementById("descrizione").innerText = descrizione[0];
-		
-		document.getElementById("immagine").src = img[1];
-		
-    break;
-		case "san bernardo":
-		
-		document.getElementById("descrizione").innerText = descrizione[2];
-		
-		document.getElementById("immagine").src = img[2];
-		
-    break;
-		case "terranova":
-		
-		document.getElementById("descrizione").innerText = descrizione[3];
-		
-		document.getElementById("immagine").src = img[3];
-		
-    break;
-		default:
-    
-}
+	const p = document.createElement("p");
 	
+	img.src = 
 	
 }
